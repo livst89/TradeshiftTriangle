@@ -6,17 +6,48 @@
 
     <link rel="stylesheet" href="https://d5wfroyti11sa.cloudfront.net/prod/client/ts-12.0.1.min.css"/>
     <script src="https://d5wfroyti11sa.cloudfront.net/prod/client/ts-12.0.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/custom.css">
+
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="ts-triangle" content="Triangle Type Checker App"/>
+    <!-- <link rel="ts-app-icon" href="my-icon.svg"/> Getting some sort of injection error, commenting out for now -->
   </head>
   <body>
-    <main id="main">
-      <h1>Triangle Checker</h1>
-      <form id="triangle-input">
-        <input class="input" type="number" id="sideA" value="">
-        <input class="input" type="number" id="sideB" value="">
-        <input class="input" type="number" id="sideC" value="">
-        <button type="button" id="formSubmit" onClick="checkTriangle()">Check</button>
-      </form>
-    </main>
+
+    <div data-ts="App">
+			<div data-ts="Main">
+				<div data-ts="Content">
+					<div data-ts="Panel">
+            <section id="triangle-section">
+              <h1>Triangle Checker</h1>
+              <div data-ts="Note">
+              	<i class="ts-icon-arrowdown"></i>
+              	<p>Enter three positive numbers into the input fields. Press enter after typing or use the button to check what type of triangle the given length values produce.</p>
+              </div>
+              <form id="triangle-input" data-ts="Form">
+                <fieldset>
+                  <label>
+                    <span>Length 1</span>
+                    <input id="sideA" class="input" type="number" required/>
+  	              </label>
+                  <label>
+                    <span>Length 2</span>
+                    <input id="sideB" class="input" type="number" required/>
+  	              </label>
+                  <label>
+                    <span>Length 3</span>
+                    <input id="sideC" class="input" type="number" required/>
+  	              </label>
+                </fieldset>
+
+                <button data-ts="Button" id="formSubmit" class="ts-primary" type="button" onClick="checkTriangle()">Check triangle type</button>
+              </form>
+            </section>
+					</div>
+				</div>
+			</div>
+		</div>
 
     <script src="js/triangleType.js"></script>
   </body>
