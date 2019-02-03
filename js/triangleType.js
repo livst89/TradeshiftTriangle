@@ -10,6 +10,7 @@ document.addEventListener('keypress', function (event) {
 }, false);
 
 var resultPara = document.createElement("P");
+document.getElementById("triangle-input").appendChild(resultPara);
 
 
 function checkTriangle() {
@@ -18,7 +19,6 @@ function checkTriangle() {
   if (isValidTriangle()) {
     findTriangleType();
   };
-  document.getElementById("triangle-input").appendChild(resultPara);
 };
 
 function getFormInput() {
