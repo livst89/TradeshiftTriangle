@@ -3,13 +3,13 @@ let textnode = document.createTextNode("");
 
 // "Submits" form upon pressing the enter key in the input fields
 document.addEventListener('keypress', function (event) {
-  var key = event.which || event.keyCode;
+  let key = event.which || event.keyCode;
     if (key === 13 && event.target.classList.contains('input')) {
       checkTriangle();
     }
 }, false);
 
-var resultPara = document.createElement("P");
+let resultPara = document.createElement("P");
 document.getElementById("triangle-section").appendChild(resultPara);
 resultPara.classList.add("result");
 
@@ -46,7 +46,7 @@ function isValidTriangle() {
 };
 
 function findTriangleType() {
-  var result = "";
+  let result = "";
   if (a == b && a == c) {
     // All sides are of equal lengths
     result = "an Equilateral";
