@@ -30,9 +30,7 @@ sum of the squares of the lengths of the other two sides, then the triangle is
 a right triangle."
 
 c^2 < a^2 + b^2 = acute
-
 c^2 = a^2 + b^2 = right
-
 c^2 > a^2 + b^2 = obtuse
 
 
