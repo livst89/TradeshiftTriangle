@@ -1,40 +1,68 @@
 let a = 0, b = 0, c = 0;
+let textnode = document.createTextNode("");
+
+// "Submits" form upon pressing the enter key in the input fields
+document.addEventListener('keypress', function (event) {
+  var key = event.which || event.keyCode;
+    if (key === 13 && event.target.classList.contains('input')) {
+      checkTriangle();
+    }
+}, false);
+
+var resultPara = document.createElement("P");
+
 
 function checkTriangle() {
+  clearResultPara();
   getFormInput();
-  //isValidTriangle();
   if (isValidTriangle()) {
     findTriangleType();
   };
+  document.getElementById("triangle-input").appendChild(resultPara);
 };
 
 function getFormInput() {
-  a = parseInt(document.getElementById("sideA").value);
-  b = parseInt(document.getElementById("sideB").value);
-  c = parseInt(document.getElementById("sideC").value);
+  a = parseFloat(document.getElementById("sideA").value);
+  b = parseFloat(document.getElementById("sideB").value);
+  c = parseFloat(document.getElementById("sideC").value);
 };
 
 function isValidTriangle() {
+  // If input values are 0 or negative
   if (a <= 0 || b <= 0 || c <= 0) {
-    console.log("Invalid: 0 or negative values.");
+    textnode.nodeValue = "Input is invalid, as one or more values are not positive numbers.";
+    resultPara.appendChild(textnode);
     return false;
   };
+  // If the two shorter sides combined are longer than the longest side, they can form a valid triangle
   if (a + b > c && a + c > b && b + c > a) {
-    console.log("Valid: Side lenghts form a valid triangle.");
     return true;
   } else {
-    console.log("Invalid: Side lengths does not form a valid triangle.");
+    textnode.nodeValue = "Input is invalid, as the given lengths does not produce a valid triangle.";
+    resultPara.appendChild(textnode);
     return false;
   };
 };
 
 function findTriangleType() {
+  var result = "";
   if (a == b && a == c) {
-    console.log("Equilateral");
+    // All sides are of equal lengths
+    result = "an Equilateral";
   } else if (a == b || a == c || b == c) {
-    console.log("Isosceles");
+    // Two sides are of equal lengths
+    result = "an Isosceles";
   }
   else {
-    console.log("Scalene");
-  }
+    // All sides are different lengths
+    result = "a Scalene";
+  };
+  var textnode = document.createTextNode("The given lengths produce " + result + " triangle.");
+  resultPara.appendChild(textnode);
+};
+
+function clearResultPara() {
+  while (resultPara.firstChild) {
+    resultPara.removeChild(resultPara.firstChild);
+  };
 };
