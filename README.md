@@ -1,4 +1,4 @@
-# Assignment notes
+Alt-H1 Assignment notes
 ================
 
 ## 1.0 Problem to solve
