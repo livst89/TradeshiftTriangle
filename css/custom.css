@@ -1,0 +1,21 @@
+section {
+  padding: 50px;
+  max-width: 800px;
+  margin: auto;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.result {
+  font-size: 2em;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 10px;
+  }
+}
