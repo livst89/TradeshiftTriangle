@@ -4,12 +4,25 @@
 
 Determine triangle type by side lengths.
 
+
 ### 1.1: Valid triangle?
 
-Does the three lengths allow for a triangle?
+Does the three lengths (input values) allow for a triangle?
 
-Requirements: Not 0 or less, and two shorter sides added together must be
-greater than the longest side.
+Possible pitfall: Input data types and valid values. Can be handled by
+restricting the input type and doing a values check before evaluating the
+triangle type.
+
+Input value requirements: Not 0 or less, and two shorter sides added together
+must be greater than the longest side.
+
+Converting input to floats in order to accommodate decimals.
+
+Getting the form inputs are currently done individually for each input field. An
+alternate way would be to get an array of them, possibly by using a JS
+getAllElements function call or a query selector. For a larger form this would
+be preferable.
+
 
 ### 1.2: Triangle types
 
@@ -21,11 +34,14 @@ Isosceles: Two sides are same length.
 
 Scalene: No congruent side lengths.
 
+Can be done using fairly simple condition statements. By first having evaluated
+whether the input values are valid, the following triangle type evaluation does
+not need to account for this.
 
 Possible bonus: Check for right, acute and obtuse triangle? Converse Pythagorean
-Theorem. "If the square of the length of the longest side of a triangle is equal to the
-sum of the squares of the lengths of the other two sides, then the triangle is
-a right triangle."
+Theorem. "If the square of the length of the longest side of a triangle is equal
+to the sum of the squares of the lengths of the other two sides, then the
+triangle is a right triangle."
 
 c^2 < a^2 + b^2 = acute
 
@@ -34,15 +50,18 @@ c^2 = a^2 + b^2 = right
 c^2 > a^2 + b^2 = obtuse
 
 
-
 ## 2.0 Thoughts on project structure
 
-KISS: Keep It Simple Stupid. Single page application, one JS file for triangle
-calculations.
+KISS: Keep It Simple Stupid. Single page application in index.html, one JS file
+for triangle type evaluation and a CSS file for some minor layout adjustments.
+Tradeshift UI files are linked as externals.
 
-HTML: Semantic elements.
+HTML: Semantic elements (not too happy with the bunch of divs in the Tradeshift
+UI boilerplate template, but oh well). Keep elements properly separated and
+structured.
 
-JS file: Separation of functionality with clearly named functions.
+JS file: Separation of functionality with clearly named functions. I have strived
+to keep code duplication to a minimum.
 
 
 ## 3.0 Tradeshift UI
@@ -61,10 +80,12 @@ https://github.com/Tradeshift/tradeshift-ui
 - Wish there was a bit more documentation on Typography options... Colors, weights, styles...
 - Would also love some documentation on utility classes for positioning, sizing, spacing, alignment...
 
+
 ## 4.0 Further work
 
 - Add error and info helpers to form input fields.
 - Drawing the given triangle using canvas as an output!
+- Include checking if the triangle is right, acute or obtuse.
 
 
 ## 5.0 Time spent
