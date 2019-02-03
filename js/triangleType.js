@@ -10,7 +10,8 @@ document.addEventListener('keypress', function (event) {
 }, false);
 
 var resultPara = document.createElement("P");
-document.getElementById("main").appendChild(resultPara);
+document.getElementById("triangle-section").appendChild(resultPara);
+resultPara.classList.add("result");
 
 
 function checkTriangle() {
@@ -38,7 +39,7 @@ function isValidTriangle() {
   if (a + b > c && a + c > b && b + c > a) {
     return true;
   } else {
-    textnode.nodeValue = "Input is invalid, as the given lengths does not produce a valid triangle.";
+    textnode.nodeValue = "Input is invalid, as the given lengths do not produce a valid triangle.";
     resultPara.appendChild(textnode);
     return false;
   };
