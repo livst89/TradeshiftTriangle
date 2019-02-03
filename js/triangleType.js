@@ -10,7 +10,7 @@ document.addEventListener('keypress', function (event) {
 }, false);
 
 var resultPara = document.createElement("P");
-document.getElementById("triangle-input").appendChild(resultPara);
+document.getElementById("main").appendChild(resultPara);
 
 
 function checkTriangle() {
@@ -57,7 +57,7 @@ function findTriangleType() {
     // All sides are different lengths
     result = "a Scalene";
   };
-  var textnode = document.createTextNode("The given lengths produce " + result + " triangle.");
+  textnode.nodeValue = "The given lengths produce " + result + " triangle.";
   resultPara.appendChild(textnode);
 };
 
