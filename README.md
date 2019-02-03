@@ -90,4 +90,4 @@ https://github.com/Tradeshift/tradeshift-ui
 
 ## 5.0 Time spent
 
-~5-6 hours or so total, spread over a couple of evenings.
+~6-7 hours or so total, spread over a couple of evenings.
