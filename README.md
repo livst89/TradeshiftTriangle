@@ -2,11 +2,11 @@
 
 1. [Problem to solve](#problem-to-solve)
   1. [Valid triangle?](#valid-triangle?)
-  2. [Triangle types](#triangle-types)
-2. [Thoughts on project structure](#thoughts-on-project-structure)
-3. [Tradeshift UI](#tradeshift-ui)
-4. [Further work](#further-work)
-5. [Time spent estimate](#time-spent-estimate)
+  1. [Triangle types](#triangle-types)
+1. [Thoughts on project structure](#thoughts-on-project-structure)
+1. [Tradeshift UI](#tradeshift-ui)
+1. [Further work](#further-work)
+1. [Time spent estimate](#time-spent-estimate)
 
 ## Problem to solve
 
