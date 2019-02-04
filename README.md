@@ -10,7 +10,7 @@
 
 ## Problem to solve
 
-Determine triangle type by side lengths.
+Determine a triangles type by given side length values.
 
 
 ### Valid triangle?
@@ -28,7 +28,7 @@ Converting input to floats in order to accommodate decimals.
 
 Getting the form inputs are currently done individually for each input field. An
 alternate way would be to get an array of them, possibly by using a JS
-getAllElements function call or a query selector. For a larger form this would
+`getAllElements` function call or a query selector. For a larger form this would
 be preferable.
 
 
