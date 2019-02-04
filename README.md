@@ -1,6 +1,6 @@
 # Assignment notes
 
-- #1.0-problem-to-solve
+- #problem-to-solve
   - 1.1: Valid triangle?
   - 1.2: Triangle types
 - 2.0: Thoughts on project structure
@@ -8,12 +8,12 @@
 - 4.0: Further work
 - 5.0: Time spent estimate
 
-## 1.0 Problem to solve
+## Problem to solve
 
 Determine triangle type by side lengths.
 
 
-### 1.1: Valid triangle?
+### Valid triangle?
 
 Does the three lengths (input values) allow for a triangle?
 
