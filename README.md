@@ -1,8 +1,8 @@
 # Assignment notes
 
 1. [Problem to solve](#problem-to-solve)
-  1. [Valid triangle?](#valid-triangle?)
-  1. [Triangle types](#triangle-types)
+   1. [Valid triangle?](#valid-triangle?)
+   1. [Triangle types](#triangle-types)
 1. [Thoughts on project structure](#thoughts-on-project-structure)
 1. [Tradeshift UI](#tradeshift-ui)
 1. [Further work](#further-work)
