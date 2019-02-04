@@ -1,12 +1,12 @@
 # Assignment notes
 
 1. [Problem to solve](#problem-to-solve)
-  - 1.1: Valid triangle?
-  - 1.2: Triangle types
-2. 2.0: Thoughts on project structure
-3. 3.0: Tradeshift UI
-4. 4.0: Further work
-5. 5.0: Time spent estimate
+  1. [Valid triangle?](#valid-triangle?)
+  2. [Triangle types](#triangle-types)
+2. [Thoughts on project structure](#thoughts-on-project-structure)
+3. [Tradeshift UI](#tradeshift-ui)
+4. [Further work](#further-work)
+5. [Time spent estimate](#time-spent-estimate)
 
 ## Problem to solve
 
@@ -32,7 +32,7 @@ getAllElements function call or a query selector. For a larger form this would
 be preferable.
 
 
-### 1.2: Triangle types
+### Triangle types
 
 Types to check for: Equilateral, isosceles or scalene.
 
@@ -56,7 +56,7 @@ c^2 = a^2 + b^2 = right
 c^2 > a^2 + b^2 = obtuse
 
 
-## 2.0 Thoughts on project structure
+## Thoughts on project structure
 
 **KISS:** Keep It Simple Stupid. Single page application in index.html, one JS file
 for triangle type evaluation and a CSS file for some minor layout adjustments.
@@ -70,7 +70,7 @@ structured.
 to keep code duplication to a minimum.
 
 
-## 3.0 Tradeshift UI
+## Tradeshift UI
 
 http://ui.tradeshift.com/
 https://github.com/Tradeshift/tradeshift-ui
@@ -87,7 +87,7 @@ https://github.com/Tradeshift/tradeshift-ui
 - Would also love some documentation on utility classes for positioning, sizing, spacing, alignment...
 
 
-## 4.0 Further work
+## Further work
 
 - Add error and info helpers to form input fields.
 - Drawing the given triangle using `canvas` as an output!
@@ -95,6 +95,6 @@ https://github.com/Tradeshift/tradeshift-ui
 - Include checking if the triangle is right, acute or obtuse.
 
 
-## 5.0 Time spent estimate
+## Time spent estimate
 
 ~6-7 hours or so total, spread over a couple of evenings.
