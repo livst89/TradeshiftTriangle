@@ -1,12 +1,12 @@
 # Assignment notes
 
-- #problem-to-solve
+1. [Problem to solve](#problem-to-solve)
   - 1.1: Valid triangle?
   - 1.2: Triangle types
-- 2.0: Thoughts on project structure
-- 3.0: Tradeshift UI
-- 4.0: Further work
-- 5.0: Time spent estimate
+2. 2.0: Thoughts on project structure
+3. 3.0: Tradeshift UI
+4. 4.0: Further work
+5. 5.0: Time spent estimate
 
 ## Problem to solve
 
